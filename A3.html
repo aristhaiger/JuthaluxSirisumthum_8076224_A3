@@ -1,0 +1,571 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JuthaluxSirisumthum_8076224_A3</title>
+	<script>
+		
+		
+		//Task 4: your javascript code for task 4 should be below the comment
+		
+
+
+		function Cat(){    
+			document.getElementById("dogbtn").classList.remove("selected"); //Remove the class from an element
+			document.getElementById("frogbtn").classList.remove("selected"); //Remove the class from an element
+			document.getElementById("catbtn").classList.add("selected"); //Add the class from an element
+			document.getElementById("Task4txt").style.backgroundColor = "royalblue"; //Set a background color for Task4txt
+			var displayField = document.getElementById("Task4txt"); // show Cat message   
+			displayField.value = "User clicks Cat"; 
+			var displaySpanCat = document.getElementById("Task4displayCat");
+			displaySpanCat.innerHTML = "Cat is clicked"; //Display Cat message
+			var displaySpanDog = document.getElementById("Task4displayDog");
+			displaySpanDog.innerHTML = ""; //Remove Dog message
+			var displaySpanFrog = document.getElementById("Task4displayFrog");
+			displaySpanFrog.innerHTML = ""; //Remove Frog message
+			var image = document.getElementById("Task4img"); // show Cat Image   
+			image.src = "Hello_kitty_character_portrait.png"; 
+		}
+		
+
+		function Dog(){ 
+			document.getElementById("catbtn").classList.remove("selected"); //Remove the class from an element
+			document.getElementById("frogbtn").classList.remove("selected"); //Remove the class from an element
+			document.getElementById("dogbtn").classList.add("selected"); //Add the class from an element   
+			document.getElementById("Task4txt").style.backgroundColor = "rgb(75, 83, 92)"; //Set a background color for Task4txt
+			var displayField = document.getElementById("Task4txt"); // show Dog message   
+			displayField.value = "User clicks Dog"; 
+			var displaySpanDog = document.getElementById("Task4displayDog");
+			displaySpanDog.innerHTML = "Dog is clicked"; //Display Dog message
+			var displaySpanCat = document.getElementById("Task4displayCat");
+			displaySpanCat.innerHTML = ""; //Remove Cat message
+			var displaySpanFrog = document.getElementById("Task4displayFrog");
+			displaySpanFrog.innerHTML = ""; //Remove Frog message
+			var image = document.getElementById("Task4img"); // show Frog Image   
+			image.src = "Sanrio_Characters_Pochacco_Image005.png"; 
+		}
+
+
+		function Frog(){
+			document.getElementById("catbtn").classList.remove("selected"); //Remove the class from an element
+			document.getElementById("dogbtn").classList.remove("selected"); //Remove the class from an element
+			document.getElementById("frogbtn").classList.add("selected"); //Add the class from an element       
+			document.getElementById("Task4txt").style.backgroundColor = "seagreen"; //Set a background color for Task4txt
+			var displayField = document.getElementById("Task4txt"); // show Frog message   
+			displayField.value = "User clicks Frog"; 
+			var displaySpanFrog = document.getElementById("Task4displayFrog");
+			displaySpanFrog.innerHTML = "Frog is clicked"; //Display Frog message
+			var displaySpanCat = document.getElementById("Task4displayCat");
+			displaySpanCat.innerHTML = ""; //Remove Cat message
+			var displaySpanDog = document.getElementById("Task4displayDog");
+			displaySpanDog.innerHTML = ""; //Remove Dog message
+			var image = document.getElementById("Task4img"); // show Frog Image   
+			image.src = "icons8-keroppi-240.png"; 
+		}
+
+		
+	
+    </script>
+	
+
+	<style> 
+		h1 {
+			color: green;
+			margin-top: 70px}
+			
+		.h11 {
+			margin-top: 50px;
+			color: red; 
+			text-align:center;
+			font-size: 50px}
+			
+		/* you can add other styles below */
+
+
+		/*--- Start Task 1 CSS ---*/
+		.h21 {
+			margin-top: 40px;
+			font-size: 40px;
+			color:lightsalmon;
+		}
+
+		.h22 {
+			margin-top: 30px;
+			font-size: 30px;
+			color:lightskyblue;
+		}
+		
+		.h23 {
+			margin-top: 20px;
+			font-size: 20px;
+			color:lightgreen;
+		}
+		
+		#task1 {			
+			border-collapse: collapse;
+			border: 2px solid powderblue;
+			background-color: darkmagenta;
+		}
+
+		tr, td {
+			padding-right: 30px;
+			padding-left: 30px;
+			text-align:center;
+		}
+		/*--- End Task 1 CSS ---*/
+
+		/*--- Start Task 2 CSS ---*/
+
+		#task2 {	
+			width: auto;
+			font-family: Arial, Helvetica, sans-serif;		
+			border-collapse: collapse;
+			color:brown;
+		}
+
+		#task2 thead {
+			border: 1px solid #ddd;
+			color: #f9f9f9;
+			background:darkgreen;		
+		}
+
+		#task2 td, #task2 th {
+			/*border: 1px solid #ddd;*/
+			border: 2px dashed #8b8080;
+  			border-radius: 5px;
+			padding: 8px;
+			text-align: left;
+		}
+
+		#task2 th {
+			font-family:'Times New Roman', Times, serif;
+			font-size: x-large;
+		}
+		
+		/*select the even tr elements*/
+		#task2 tr:nth-child(even) {  
+			background-color:rgb(230, 253, 230);
+			color: deeppink;
+		}
+
+		/*hoover on link*/
+		#Task2 a:hover {
+			color: rgb(30, 189, 30);
+		}
+
+
+		/*--- End Task 2 CSS ---*/
+
+
+		/*--- Start Task 3 CSS ---*/
+
+		#task3 {	
+			display: block;
+			max-width: 80%;
+			border-width: 10px;
+			border-style: inset;
+			border-color: darkkhaki;
+			font-family: Arial, Helvetica, sans-serif;		
+			color: rgb(10, 60, 83);
+			/*overflow: scroll;*/
+			word-break: break-all;
+		}
+
+		/*fix width for image*/ 
+		#task3 img {
+			width: 300px;
+
+		}
+
+		#task3 th {
+			background-color: darkkhaki;
+			color: rgb(10, 60, 83);
+		}
+
+		#task3 td, #task3 th {	
+			border: 1px dotted;
+			padding-top: 20px;
+			padding-right: 8px;
+			padding-bottom: 20px;
+			padding-left: 8px;
+			text-align: left;
+			/*vertical-align: top;*/
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+
+		/*two different background colors for odd and even tr elements*/
+		#task3 tr:nth-child(even) {  
+			background-color: rgb(250, 245, 176);
+			color: coral;
+		}
+
+		#task3 tr:nth-child(odd) {  
+			background-color:rgb(230, 226, 177);
+			color:cornflowerblue;
+		}
+
+		/*hoover on link*/
+		#Task3 a:hover {
+			color: rgb(33, 182, 252);
+		}
+
+		#Task3description {
+			text-align: left; /*Aligns the text to the left*/
+			white-space: pre; /*Whitespace is preserved by the browser. Text will only wrap on line breaks.*/
+		}
+
+		/*--- End Task 3 CSS ---*/
+
+
+		/*--- Start Task 4 CSS ---*/
+
+		/*hoover on button*/
+		button:hover {
+			background-color: lightskyblue;
+		}
+
+		/*whenever a buton is clicked, this is highlighted colour*/
+		.selected {
+  			background-color:dodgerblue;
+  		}
+
+		#Task4displayCat {
+			font-family: Arial, Helvetica, sans-serif;
+			font-style: italic;
+			color:royalblue;
+		}
+
+		#Task4displayDog {
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			color:rgb(75, 83, 92);
+		}
+
+		#Task4displayFrog {
+			font-family: Arial, Helvetica, sans-serif;
+			color:seagreen;
+		}
+
+		#Task4form input{
+			color: whitesmoke;
+		}
+
+		/*fix height for image*/ 
+		#Task4img {
+			height: 480px;	
+		}
+
+
+		/*--- End Task 4 CSS ---*/
+
+
+	 div {
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+		font-size: small;
+	 }
+		
+		
+	</style>
+	
+</head>
+
+<body>
+    <h1 class="h11"> ASSESSMENT TASK 3 – ASSIGNMENT 1 </h1>
+	<h1 class="h11">JuthaluxSirisumthum_8076224_A3</h1>
+		
+	<h1> Task 1 </h1>
+    <!-- html code for task 1 must be right below -->
+	<table id="task1">
+		<tr>
+			<td>
+				<h1 class="h21">8076224 Juthalux Sirisumthum</h1>
+				<h1 class="h22">COMP804: Web Security</h1>
+				<h1 class="h23"><i>Assignment 1, due at end of Week 5 (@11 pm on Monday, 21 Aug 2023)</i></h1>
+			</td>
+		</tr>
+	</table>
+
+
+	<h1> Task 2 </h1>
+	<!-- html code for task 2 must be right below -->
+	
+	<table id="task2">
+		<thead> <!--to group header content in an HTML table (head)-->
+			<tr>
+				<th>Activity</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>  <!--to specify each part of a table (body)-->
+			<tr>
+				<td>First day to enrol for re-enrolling (continuing students)</td>
+				<td>21 Nov 2022</td>
+			</tr>
+			<tr>
+				<td>Orientation for new students (Sydney)</td>
+				<td>14 Aug 2023</td>
+			</tr>
+			<tr>
+				<td>Orientation for new students (Wollongong)</td>
+				<td>15 Aug 2023</td>
+			</tr>
+			<tr>
+				<td>Orientation for new students (Online)</td>
+				<td>16 Aug 2023</td>
+			</tr>
+			<tr>
+				<td>Lectures commence (weeks 1 - 10)</td>
+				<td>21 Aug - 27 Oct 2023</td>
+			</tr>
+			<tr>
+				<td>Last day to enrol / add subjects yourself</td>
+				<td>01 Sep 2023</td>
+			</tr>
+			<tr>
+				<td>Last day to enrol / add subjects with Head of Students approval</td>
+				<td>08 Sep 2023</td>
+			</tr>
+			<tr>
+				<td><strong>CENSUS DATE</strong><br>
+					<ul>
+					<li>Fees due</li>
+					<li>Last day to withdraw from subject/s without paying for them</li>
+					<li>HECS / FEE HELP debt reporting date</li>
+					<li>Last day to change HECS / FEE HELP billing option</li>
+					</ul>
+					<p><a href="https://uowedu.service-now.com/kb?id=kb_article_view&amp;sysparm_article=KB0012659" target="_blank">Learn more about Census date &gt;</a></p>
+				</td>
+				<td>11 Sep 2023</td>
+			</tr>
+			<tr>
+				<td>Student Services and Amenities Fees Due</td>
+				<td>12 Sep 2023</td>
+			</tr>
+			<tr>
+				<td>Last day to withdraw without academic penalty - subject deleted from record
+				<p>Fail grade recorded if subject withdrawn after this date</p>
+				</td>
+				<td>29 Sep 2023</td>
+			</tr>
+			<tr>
+				<td>Study recess (1 week)</td>
+				<td>30 Oct - 03 Nov 2023</td>
+			</tr>
+			<tr>
+				<td>Exams (2 weeks)</td>
+				<td>04 Nov - 16 Nov 2023</td>
+			</tr>
+			<tr>
+				<td>Release of results</td>
+				<td>30 Nov 2023</td>
+			</tr>
+		</tbody>
+	</table>
+	
+
+	<h1> Task 3 </h1>
+	<!-- html code for task 3 must be right below -->
+	
+	<table id="task3">
+		<thead> <!--to group header content in an HTML table (head)-->
+			<tr>
+				<th width=30px">No.</th>
+				<th>Name</th>
+				<th>Web Attacks</th>
+			</tr>
+		</thead>
+		<tbody>  <!--to specify each part of a table (body)-->
+			<tr>
+				<td>1.</td>
+				<td><h3>Malware</strong></h3>
+					<p><image src="Types-of-Malware-EN.png" \></p>
+					<p>Image source:<a href="https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/what_is_malware_academy_refresh/Types-of-Malware-EN.png" target="_blank">https://academy.avast.com/hs-fs/hubfs/New_Avast_Academy/what_is_malware_academy_refresh/Types-of-Malware-EN.png</a></p>
+					
+
+				</td>
+				<td><h4>Description of Malware</h4>
+					<p id="Task3description">Malware is an umbrella term for any type of “malicious software” that’s designed to infiltrate your device 
+without your knowledge, cause damage or disruption to your system, or steal data. Adware, spyware, viruses, 
+botnets, trojans, worms, rootkits, and ransomware all fall under the definition of malware.</p>
+					<p>Souce: <a href="https://www.avast.com/c-malware" target="_blank">https://www.avast.com/c-malware</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td><h3>Denial-of-Service (DoS) Attacks</h3>
+					<p><image src="what-is-ddos-botmaster-698x419.png" \></p>
+					<p>Image source:<a href="https://www.thesslstore.com/blog/wp-content/uploads/2019/10/what-is-ddos-botmaster.png" target="_blank">https://www.thesslstore.com/blog/wp-content/uploads/2019/10/what-is-ddos-botmaster.png</a></p>
+					
+
+				</td>
+				<td><h4>Description of Denial-of-Service (DoS) Attacks</h4>
+					<p id="Task3description">A denial-of-service (DoS) attack is a type of cyber attack in which a malicious actor aims to render a computer 
+or other device unavailable to its intended users by interrupting the device's normal functioning. DoS attacks 
+typically function by overwhelming or flooding a targeted machine with requests until normal traffic is unable 
+to be processed, resulting in denial-of-service to addition users. A DoS attack is characterized by using 
+a single computer to launch the attack.</p>
+					<p>Souce: <a href="https://www.cloudflare.com/en-gb/learning/ddos/glossary/denial-of-service/" target="_blank">https://www.cloudflare.com/en-gb/learning/ddos/glossary/denial-of-service/</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td><h3>Phishing</h3>
+					<p> <image src="SLAMMethod_323.png" \></p>
+					<p>Image source:<a href="https://images.squarespace-cdn.com/content/v1/5aa96c579772aea9adaa2ef7/219964b7-fb57-47df-be6a-d923c0df4d48/SLAMMethod_323.png?format=2500w" target="_blank">https://images.squarespace-cdn.com/content/v1/5aa96c579772aea9adaa2ef7/219964b7-fb57-47df-be6a-d923c0df4d48/SLAMMethod_323.png?format=2500w</a></p>
+					
+
+				</td>
+				<td><h4>Description of Phishing</h4>
+					<p id="Task3description">Phishing is a cybercrime in which a target or targets are contacted by email, telephone or text message by 
+someone posing as a legitimate institution to lure individuals into providing sensitive data such as 
+personally identifiable information, banking and credit card details, and passwords.</p>
+					<p>Souce: <a href="https://www.phishing.org/what-is-phishing" target="_blank">https://www.phishing.org/what-is-phishing/a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td><h3>Spoofing</h3>
+					<p><image src="IMG_ORG_1678244442259.jpeg" \></p>
+					<p>Image source:<a href="https://lh3.googleusercontent.com/-_4ah0CSvzZM/ZAf6ZhEUDGI/AAAAAAAAB0A/AxtkpYKbJRUmE9nrgTvxaBoIIHkVZwrdACNcBGAsYHQ/s16000/IMG_ORG_1678244442259.jpeg" target="_blank">https://lh3.googleusercontent.com/-_4ah0CSvzZM/ZAf6ZhEUDGI/AAAAAAAAB0A/AxtkpYKbJRUmE9nrgTvxaBoIIHkVZwrdACNcBGAsYHQ/s16000/IMG_ORG_1678244442259.jpeg</a></p>
+					
+
+				</td>
+				<td><h4>Description of Spoofing</h4>
+					<p id="Task3description">Spoofing is a type of scam in which a criminal disguises an email address, display name, phone number, text message, 
+or website URL to convince a target that they are interacting with a known, trusted source. Spoofing often involves 
+changing just one letter, number, or symbol of the communication so that it looks valid at a quick glance. 
+For example, you could receive an email that appears to be from Netflix using the fake domain name “netffix.com.”</p>
+					<p>Souce: <a href="https://www.investopedia.com/terms/s/spoofing.asp" target="_blank">https://www.investopedia.com/terms/s/spoofing.asp</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td><h3>Identity-Based Attacks</h3>
+					<p><image src="identity-based-attack.png" \></p>
+					<p>Image source:<a href="https://www.silverfort.com/wp-content/uploads/2021/09/identity-based-attack.png?_t=1630913549" target="_blank">https://www.silverfort.com/wp-content/uploads/2021/09/identity-based-attack.png?_t=1630913549</a></p>
+					
+
+				</td>
+				<td><h4>Description of Identity-Based Attacks</h4>
+					<p id="Task3description">Identity-based attacks occur when cybercriminals target your computer system, network, or account to retrieve 
+your personal information for illegal or malicious activities. Also known as impersonation attacks, 
+threat actors leverage them to collect sensitive data, steal money, and ruin the target's reputation.</p>
+					<p>Souce: <a href="https://www.makeuseof.com/what-are-identity-based-attacks/#:~:text=Identity%2Dbased%20attacks%20occur%20when,and%20ruin%20the%20target's%20reputation." target="_blank">https://www.makeuseof.com/what-are-identity-based-attacks/#:~:text=Identity%2Dbased%20attacks%20occur%20when,and%20ruin%20the%20target's%20reputation.</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td><h3>Code Injection Attacks</h3>
+					<p><image src="A_Pentester___s_Guide_to_Code_Injection-1.png" \></p>
+					<p>Image source:<a href="https://www.cobalt.io/hubfs/Imported_Blog_Media/A_Pentester___s_Guide_to_Code_Injection-1.png" target="_blank">https://www.cobalt.io/hubfs/Imported_Blog_Media/A_Pentester___s_Guide_to_Code_Injection-1.png</a></p>
+					
+
+				</td>
+				<td><h4>Description of Code Injection Attacks</h4>
+					<p id="Task3description">Code injection is the term used to describe attacks that inject code into an application. That injected code 
+is then interpreted by the application, changing the way a program executes. Code injection attacks typically 
+exploit an application vulnerability that allows the processing of invalid data. This type of attack exploits 
+poor handling of untrusted data, and these types of attacks are usually made possible due to a lack of proper 
+input/output data validation. Attackers are able to introduce (or inject) code into a computer program with 
+this type of vulnerability.</p>
+					<p id="Task3description">Code injection differs from command injection, where the goal is to hijack a vulnerable application in order 
+to execute arbitrary commands on the host operating system. Command injection consists of leveraging existing code 
+to execute commands, usually within the context of a shell.</p>
+					<p>Souce: <a href="https://www.contrastsecurity.com/glossary/code-injection#:~:text=Code%20injection%20is%20the%20term,the%20processing%20of%20invalid%20data." target="_blank">https://www.contrastsecurity.com/glossary/code-injection#:~:text=Code%20injection%20is%20the%20term,the%20processing%20of%20invalid%20data.</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>7.</td>
+				<td><h3>Supply Chain Attacks</h3>
+					<p><image src="security-supply_chain_attack-h.png" \></p>
+					<p>Image source:<a href="https://cdn.ttgtmedia.com/rms/onlineimages/security-supply_chain_attack-h.png" target="_blank">hhttps://cdn.ttgtmedia.com/rms/onlineimages/security-supply_chain_attack-h.png</a></p>
+					
+
+				</td>
+				<td><h4>Description of Supply Chain Attacks</h4>
+					<p id="Task3description">A supply chain attack is a type of cyber attack that targets organizations by focusing on weaker links in an 
+organization's supply chain. The supply chain is the network of all the individuals, organizations, resources, 
+activities and technology involved in the creation and sale of a product. </p>
+					<p>Souce: <a href="https://www.techtarget.com/searchsecurity/definition/supply-chain-attack#:~:text=A%20supply%20chain%20attack%20is,and%20sale%20of%20a%20product." target="_blank">https://www.techtarget.com/searchsecurity/definition/supply-chain-attack#:~:text=A%20supply%20chain%20attack%20is,and%20sale%20of%20a%20product.</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>8.</td>
+				<td><h3>Insider Threats</h3>
+					<p><image src="insider-threats-in-cyber-security.jpg" \></p>
+					<p>Image source:<a href="https://linfordco.com/wp-content/uploads/2019/07/insider-threats-in-cyber-security.jpg" target="_blank">https://linfordco.com/wp-content/uploads/2019/07/insider-threats-in-cyber-security.jpg</a></p>
+					
+
+				</td>
+				<td><h4>Description of Insider Threats</h4>
+					<p id="Task3description">Insider threat is the potential for an insider to use their authorized access or understanding of an organization 
+to harm that organization.</p>
+					<p>Souce: <a href="https://www.cisa.gov/topics/physical-security/insider-threat-mitigation/defining-insider-threats" target="_blank">https://www.cisa.gov/topics/physical-security/insider-threat-mitigation/defining-insider-threats</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>9.</td>
+				<td><h3>DNS Tunneling</h3>
+					<p><image src="DNS-tunneling-attack-1024x488.png" \></p>
+					<p>Image source:<a href="https://www.cloudns.net/blog/wp-content/uploads/2022/05/DNS-tunneling-attack-1024x488.png" target="_blank">hhttps://www.cloudns.net/blog/wp-content/uploads/2022/05/DNS-tunneling-attack-1024x488.png</a></p>
+					
+
+				</td>
+				<td><h4>Description of DNS Tunneling</h4>
+					<p id="Task3description">DNS tunneling involves abuse of the underlying DNS protocol. Instead of using DNS requests and replies to perform 
+legitimate IP address lookups, malware uses it to implement a command and control channel with its handler.</p>
+					<p>Souce: <a href="https://www.checkpoint.com/cyber-hub/network-security/what-is-dns-tunneling/#:~:text=DNS%20tunneling%20involves%20abuse%20of,however%2C%20it%20has%20its%20limits." target="_blank">https://www.checkpoint.com/cyber-hub/network-security/what-is-dns-tunneling/#:~:text=DNS%20tunneling%20involves%20abuse%20of,however%2C%20it%20has%20its%20limits.</a></p>
+				</td>
+			</tr>
+			<tr>
+				<td>10.</td>
+				<td><h3>IoT-Based Attacks</h3>
+					<p><image src="Internet-of-Things-IoT-attack.png" \></p>
+					<p>Image source:<a href="https://www.researchgate.net/publication/340036543/figure/fig1/AS:870970604658705@1584666982196/Internet-of-Things-IoT-attack.png" target="_blank">https://www.researchgate.net/publication/340036543/figure/fig1/AS:870970604658705@1584666982196/Internet-of-Things-IoT-attack.png</a></p>
+					
+
+				</td>
+				<td><h4>Description of IoT-Based Attacks</h4>
+					<p id="Task3description">IoT devices are manufactured to fulfill the general needs of an organization; therefore, they lack strict security protocols. 
+Attackers have been using this advantage to break into the system of an organization through any of the weak IoT devices.</p>
+					<p>Souce: <a href="https://www.educative.io/answers/what-are-iot-attacks" target="_blank">https://www.educative.io/answers/what-are-iot-attacks</a></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	
+	<h1> Task 4 </h1>
+	<!-- html code for task 4 must be right below -->
+	
+	<button id="catbtn" onClick="Cat();"> 
+		Cat
+	</button>
+	<button id="dogbtn" onClick="Dog();"> 
+		Dog
+	</button>
+	<button id="frogbtn" onClick="Frog();"> 
+		Frog
+	</button>
+	<p><form id="Task4form">
+		<input type="text" id="Task4txt">
+	</form></p>
+	<p><span id="Task4displayCat"></span></p>
+	<p><span id="Task4displayDog"></span></p>
+	<p><span id="Task4displayFrog"></span></p>
+	<p><img id="Task4img"></p>
+
+	
+
+	<div>
+		<h3>List of References</h3>
+		Cat Image, accessed 19 August 2023, <<a href="https://en.wikipedia.org/wiki/Hello_Kitty#/media/File:Hello_kitty_character_portrait.png/" target="_blank">https://en.wikipedia.org/wiki/Hello_Kitty#/media/File:Hello_kitty_character_portrait.png</a>>
+		</br>
+		Dog Image, accessed 19 August 2023, <<a href="https://hellokitty.fandom.com/wiki/Pochacco?file=Sanrio_Characters_Pochacco_Image005.png" target="_blank">https://hellokitty.fandom.com/wiki/Pochacco?file=Sanrio_Characters_Pochacco_Image005.png</a>>
+		</br>
+		Frog Credit, accessed 19 August 2023, <<a href="https://icons8.com/icons/set/keroppi" target="_blank">https://icons8.com/icons/set/keroppi</a>>
+	</div>
+
+	
+</body>
+
+</html>
